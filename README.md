@@ -17,7 +17,8 @@ pip install -r requirements.txt
 This command facilitates the automatic installation of all required packages and libraries, ensuring the software operates seamlessly.
 
 ## Usage Guide
-BindingSiteDTI is versatile, supporting various datasets for experimentation. Here are the step-by-step instructions for each dataset:
+BindingSiteDTI is highly versatile, capable of supporting a variety of datasets for experimentation. The tool automatically initiates data preprocessing if processed data packages are not detected. We offer convenient one-command scripts for each experiment, as follows:
+
 
 ### Experimentation on the Human Cold Dataset
 Run the following script in the terminal to conduct experiments on the human_cold dataset:
@@ -45,3 +46,7 @@ BindingSiteDTI is equipped to handle two subsets of the BindingDB dataset. Utili
   ```bash
   bash BindingDB_unseen.sh
   ```
+### Preprocessed Dataset
+For those who find data preprocessing to be time-consuming, we recommend downloading the preprocessed dataset from the following link:
+
+[Download Preprocessed Dataset](https://lifehkbueduhk-my.sharepoint.com/:f:/g/personal/22481087_life_hkbu_edu_hk/EnTHROotTA9EgyUQWeQ2DC8BWDuvAXpj3GbBLFmvjvwFTg?e=H2AaFA)
