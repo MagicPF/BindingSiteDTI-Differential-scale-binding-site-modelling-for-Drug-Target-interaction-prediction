@@ -45,6 +45,3 @@ BindingSiteDTI is equipped to handle two subsets of the BindingDB dataset. Utili
   ```bash
   bash BindingDB_unseen.sh
   ```
-
-## Additional Information
-(You can include other relevant sections here such as 'Contributing Guidelines', 'License Details', 'Acknowledgments', 'Contact Information', etc.)
