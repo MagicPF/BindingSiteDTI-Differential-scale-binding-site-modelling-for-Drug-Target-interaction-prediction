@@ -1,0 +1,1 @@
+python BSDTI.py --set=BindingDB-IBM --epoch=100 --least=0 --mlp_layer=0

@@ -1,0 +1,1 @@
+python BSDTI.py --set=human_cold --mlp_layer=2 --TD=2 --least=1 --epoch=30 --sim=0.01 --seed=1 --batch=80 --early=0

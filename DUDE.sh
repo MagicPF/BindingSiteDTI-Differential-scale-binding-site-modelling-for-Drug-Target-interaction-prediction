@@ -1,0 +1,1 @@
+python BSDTI.py --set=DUDE --epoch=20 --least=0 --batch=128 --mlp_layer=1 --sim=0.0001 --seed=42
