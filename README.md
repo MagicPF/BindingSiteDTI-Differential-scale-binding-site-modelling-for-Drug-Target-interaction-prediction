@@ -20,21 +20,21 @@ This command facilitates the automatic installation of all required packages and
 BindingSiteDTI is highly versatile, capable of supporting a variety of datasets for experimentation. The tool automatically initiates data preprocessing if processed data packages are not detected. We offer convenient one-command scripts for each experiment, as follows:
 
 
-### Experimentation on the Human Cold Dataset
+### Experiment on the Human Cold Dataset
 Run the following script in the terminal to conduct experiments on the human_cold dataset:
 
 ```bash
 bash human.sh
 ```
 
-### Experimentation on the DUDE Dataset
+### Experiment on the DUDE Dataset
 To perform experiments on the DUDE dataset, use this command:
 
 ```bash
 bash DUDE.sh
 ```
 
-### Experimentation on the BindingDB Dataset
+### Experiment on the BindingDB Dataset
 BindingSiteDTI is equipped to handle two subsets of the BindingDB dataset. Utilize the respective scripts for these experiments:
 
 - For the BindingDB 'seen' subset:
