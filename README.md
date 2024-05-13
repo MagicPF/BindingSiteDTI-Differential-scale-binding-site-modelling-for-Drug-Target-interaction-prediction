@@ -1,6 +1,8 @@
 
 # BindingSiteDTI
 
+![BindingSiteDTI](/Figure/BindingSiteDTI.png)
+
 ## Introduction
 BindingSiteDTI is a cutting-edge software tool developed for conducting sophisticated experiments on diverse datasets in the realm of Drug-Target Interactions (DTIs). Its primary objective is to streamline the analysis process of complex data, thereby significantly contributing to research in drug design and discovery.
 

@@ -148,9 +148,9 @@ class DiffPool(nn.Module):
 
 
 
-class CAGP(Readout):
+class CASS(Readout):
     def __init__(self, input_dim, m_nodes, a_nodes,num_head=1,  type="node"):
-        super(CAGP, self).__init__(type)
+        super(CASS, self).__init__(type)
         self.input_dim = input_dim
         self.attn = nn.MultiheadAttention(rep_d, num_head, batch_first=True)
         self.ffd = nn.Sequential(nn.Linear(input_dim, input_dim),nn.ReLU(),nn.Linear(input_dim, 1))
@@ -160,7 +160,8 @@ class CAGP(Readout):
         
     def forward(self, b_size, main, assist,k=K):
         assist_mask = assist.sum(-1) != 0
-        memory, weight  = self.attn(main, assist, assist, key_padding_mask=assist_mask)
+        # memory, weight  = self.attn(main, assist, assist, key_padding_mask=assist_mask)
+        memory, weight  = self.attn(main, assist, assist)
         weight = self.ffd(memory).squeeze(-1)
         weight = self.sm(weight)
         score, index = torch.topk(weight, math.ceil(self.m_nodes * k), dim=1)  # index = batch, k, 1 
@@ -212,7 +213,7 @@ class MMCMAL(nn.Module):
             self.attn_pool = AttentionReadout(input_dim=rep_d)
         self.p_pool = DiffPool(input_dim=rep_d, output_node=p_node,sparse=True)
         self.closs = ComplementaryLoss().to(device)
-        self.p_readout = CAGP(out_dim, m_nodes=p_node, a_nodes=d_seg,num_head=num_head)     
+        self.p_readout = CASS(out_dim, m_nodes=p_node, a_nodes=d_seg,num_head=num_head)     
 
     def forward(self,drug_ref, p_graph, layer_input, groundtruth):
         b_size = p_graph.batch_size

@@ -164,7 +164,8 @@ class CASS(Readout):
         
     def forward(self, b_size, main, assist,k=K):
         assist_mask = assist.sum(-1) != 0
-        memory, weight  = self.attn(main, assist, assist, key_padding_mask=assist_mask)
+        # memory, weight  = self.attn(main, assist, assist, key_padding_mask=assist_mask)
+        memory, weight  = self.attn(main, assist, assist)
         weight = self.ffd(memory).squeeze(-1)
         weight = self.sm(weight)
         score, index = torch.topk(weight, math.ceil(self.m_nodes * k), dim=1)  # index = batch, k, 1 
