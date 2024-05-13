@@ -48,7 +48,9 @@ BindingSiteDTI is equipped to handle two subsets of the BindingDB dataset. Utili
   ```bash
   bash BindingDB_unseen.sh
   ```
-### Preprocessed Dataset
+We also provided a demo report for you: https://api.wandb.ai/links/panfeng-1022/7qh74d54
+If you have any difficulty when running our codes, feel free to email me: fengpan@comp.hkbu.edu.hk
+### Preprocessed Dataset [For your convenience]
 For those who find data preprocessing to be time-consuming, we recommend downloading the preprocessed dataset from the following link:
 
 [Download Preprocessed Dataset](https://lifehkbueduhk-my.sharepoint.com/:f:/g/personal/22481087_life_hkbu_edu_hk/EnTHROotTA9EgyUQWeQ2DC8BWDuvAXpj3GbBLFmvjvwFTg?e=H2AaFA)
