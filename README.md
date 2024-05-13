@@ -4,7 +4,7 @@
 ![BindingSiteDTI](/Figure/BindingSiteDTI.png)
 
 ## Introduction
-BindingSiteDTI is a cutting-edge software tool developed for conducting sophisticated experiments on diverse datasets in the realm of Drug-Target Interactions (DTIs). Its primary objective is to streamline the analysis process of complex data, thereby significantly contributing to research in drug design and discovery.
+BindingSiteDTI (https://doi.org/10.1093/bioinformatics/btae308) is a cutting-edge software tool developed for conducting sophisticated experiments on diverse datasets in the realm of Drug-Target Interactions (DTIs). Its primary objective is to streamline the analysis process of complex data, thereby significantly contributing to research in drug design and discovery.
 
 ## Environment Setup
 Prior to running BindingSiteDTI, it is essential to set up the environment by installing all necessary dependencies. This can be efficiently done through the provided `requirements.txt` file.
