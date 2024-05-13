@@ -1,5 +1,5 @@
 
-# BindingSiteDTI
+# BindingSiteDTI: Differential-scale binding site modelling for Drug-Target interaction prediction
 
 ![BindingSiteDTI](/Figure/BindingSiteDTI.png)
 
